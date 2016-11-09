@@ -1,1 +1,2 @@
-{{ salt['pjson.pretty']( salt['pillar.get']('example') ) }}
+#!jinja|jinja
+{{ salt['pjson.pretty']( salt['pillar.get']('pointer') ) }}
