@@ -1,7 +1,7 @@
 {% raw %}
 example:
-  foo:
-    bar: "@baz"
+  a:
+    b: "@c"
   pointer: |
-    {{ salt['pillar.get']('example:foo') }}
+    {{ salt['pjson.pretty']( salt['pillar.get']('example:a') ) }}
 {% endraw %}
