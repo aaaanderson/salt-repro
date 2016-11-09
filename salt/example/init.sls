@@ -1,4 +1,4 @@
-#!jinja|yaml
+#!jinja|jinja|yaml
 foo:
   file.managed:
     - name: /home/ubuntu/foo.txt
