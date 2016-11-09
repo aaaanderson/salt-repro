@@ -2,5 +2,5 @@
 foo:
   file.managed:
     - name: /home/ubuntu/foo.txt
-    - source: |
-        {{ salt['pillar.get']('pointer') }}
+    - contents: |
+        {{ salt['pillar.get']('pointer')|indent(8, False) }}
